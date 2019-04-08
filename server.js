@@ -6,10 +6,10 @@ const app = express();
 // });
 
 app.get('/', (req, res) => {
-  //res.render('index');
-  res.render('index', {
-    title: '水蜜桃',
-  });
+  res.render('水蜜桃');
+  // res.render('index', {
+  //   title: '水蜜桃',
+  // });
 });
 
 app.set('view engine', 'pug');
