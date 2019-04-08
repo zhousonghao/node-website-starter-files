@@ -1,15 +1,15 @@
 const express = require('express');
 const app = express();
 
-// const server = app.listen(7000, () => {
-//   console.log(`Express running → PORT ${server.address().port}`);
-// });
+const server = app.listen(3000, () => {
+  console.log(`Express running → PORT`);
+});
 
 app.get('/', (req, res) => {
-  res.render('水蜜桃');
-  // res.render('index', {
-  //   title: '水蜜桃',
-  // });
+  //res.render("水蜜桃");
+  res.render('index', {
+    title: '水蜜桃',
+  });
 });
 
 app.set('view engine', 'pug');
