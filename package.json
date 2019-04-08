@@ -4,7 +4,8 @@
   "description": "A simple website built with Node, Express and Pug",
   "main": "server.js",
   "scripts": {
-    "start": ""
+    "start": "npx pm2 start server.js --watch",
+    "stop" : "npx pm2 stop server.js"
   },
   "author": "Ayo Isaiah",
   "license": "MIT",
